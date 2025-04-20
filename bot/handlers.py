@@ -39,7 +39,7 @@ async def level_3(message: Message):
     await message.answer(text=f"Savol: {question} = ?")
 
 @router.message(F.text == "LEVEL 4️⃣")
-async def level_1(message: Message):
+async def level_4(message: Message):
     question = (f"{random.randint(310, 520)} {random.choice(['+','-','*'])}"
                 f"{random.randint(310, 520)}")
     await message.answer(text=f"Savol: {question} = ?")
