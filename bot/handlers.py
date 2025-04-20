@@ -22,6 +22,24 @@ async def command_start(message: Message):
 
 @router.message(F.text == "LEVEL 1️⃣")
 async def level_1(message: Message):
-    question = (f"{random.randint(5, 50)} {random.choice(['+','-','*'])}"
-                f"{random.randint(5, 50)}")
+    question = (f"{random.randint(15, 50)} {random.choice(['+','-','*'])}"
+                f"{random.randint(15, 50)}")
+    await message.answer(text=f"Savol: {question} = ?")
+
+@router.message(F.text == "LEVEL 2️⃣")
+async def level_2(message: Message):
+    question = (f"{random.randint(70, 140)} {random.choice(['+','-','*'])}"
+                f"{random.randint(70, 140)}")
+    await message.answer(text=f"Savol: {question} = ?")
+
+@router.message(F.text == "LEVEL 3️⃣")
+async def level_3(message: Message):
+    question = (f"{random.randint(150, 280)} {random.choice(['+','-','*'])}"
+                f"{random.randint(150, 280)}")
+    await message.answer(text=f"Savol: {question} = ?")
+
+@router.message(F.text == "LEVEL 4️⃣")
+async def level_1(message: Message):
+    question = (f"{random.randint(310, 520)} {random.choice(['+','-','*'])}"
+                f"{random.randint(310, 520)}")
     await message.answer(text=f"Savol: {question} = ?")
