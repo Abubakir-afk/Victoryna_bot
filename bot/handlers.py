@@ -5,8 +5,8 @@ from aiogram import Router, F
 from aiogram.filters import CommandStart, StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, FSInputFile
-from bot.keyboard import level_buttons, start_btn
-from bot.states import LevelState
+from keyboard import level_buttons, start_btn
+from states import LevelState
 from keyboard import stop_btn
 
 router = Router()
